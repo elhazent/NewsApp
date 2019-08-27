@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".detail.DetailActivity">
+
+    <ImageView
+            android:id="@+id/newsImageDetail"
+            tools:src="@drawable/ic_launcher_background"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"/>
+
+    <TextView
+            android:id="@+id/newsDateDetail"
+            android:layout_below="@id/newsImageDetail"
+            android:layout_marginTop="8dp"
+            android:fontFamily="cursive"
+            android:text="2017-11-30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/newsWriterDetail"
+            android:text="Antonio Sikumbang"
+            android:layout_below="@id/newsImageDetail"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/newsTitleDetail"
+            android:layout_below="@id/newsDateDetail"
+            android:layout_marginTop="8dp"
+            android:text="Trump Pertimbangkan Aksi Militer Baru terhadap Rezim Suriah"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@id/newsTitleDetail"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:layout_below="@id/newsTitleDetail"
+                android:background="#D6D1D1"
+                android:layout_width="match_parent"
+                android:scrollbarStyle="insideInset"
+                android:id="@+id/newsContentDetail"
+                android:padding="20dp"
+                android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>
